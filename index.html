@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Roseline Katherine Fofanah</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background: #4a6fa5;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+    background: rgba(74, 111, 165, 0.92);
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    border-radius: 0;
+    margin: 0;
+
+    background: 
+        linear-gradient(rgba(74, 111, 165, 0.35), rgba(74, 111, 165, 0.50)),
+        url('pic.jpeg') center/cover no-repeat;
+
+    text-align: center;
+    animation: zoomBg 20s infinite alternate;
+}
+
+@keyframes zoomBg {
+    from { background-size: 100%; }
+    to { background-size: 110%; }
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 14px 30px;
+    background: #ffffff;
+    color: #4a6fa5;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 30px;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: #e8edf5;
+    transform: scale(1.05);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    width: 220px;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.video-container {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+    background: #1a1a2e;
+    padding: 8px;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    display: block;
+    border-radius: 12px;
+    background: #0d0d1a;
+}
+
+.video-container video::-webkit-media-controls-panel {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.video-container video::-webkit-media-controls-play-button {
+    background-color: #4a6fa5;
+    border-radius: 50%;
+}
+
+.hidden {
+    display: none;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #f0f4fa;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section h2 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+strong {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    .video-container video {
+        max-height: 350px;
+    }
+
+    section {
+        padding: 50px 15px;
+        margin: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    .card {
+        width: 160px;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-container video {
+        max-height: 280px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <h1 id="typing"></h1>
+    <p>Today is all about you</p>
+    <button class="btn" onclick="scrollToSection()">Begin</button>
+</section>
+
+<section id="story">
+    <h2>Our Story</h2>
+    <p>It didn't begin with thunder or a sky split open — no grand declaration, no perfectly timed glance. It started softly, like the first note of a song you don't recognize until it becomes your favorite melody. That's how my story with you quietly unfolded.
+
+At first, it was only words — gentle, unhurried, effortless. But somewhere between the laughter that spilled like sunlight and the talks that stretched into the small hours, you drifted from the edges of my world to its very center. You became not just someone I knew, but someone my soul had been waiting for. In you, I found a stillness I never knew I was aching to feel.
+
+We were never a flawless story — we had our storms, our shadows, our seasons of silence. But even in the cold, even in the quiet, something in us refused to fade. Perhaps it was the way we always found our way back through the dark, or the way your very presence felt like coming home — like walking into a room where the fire never dies.
+
+Loving you has not always been gentle — but it has always been true. Because with you, it was never about chasing perfect days — it was about choosing your hand in the rain, your heart in the chaos, your name in the quiet of my own mind, again and again.
+
+And that is our story — not painted in gold, not woven of ease — but carved in truth, etched in feeling, alive in every scar and every bloom. And somehow, that makes it more breathtaking than any fairytale ever dared to be.</p>
+</section>
+
+<section>
+    <h2>What I Admire About You</h2>
+    <div class="card-container">
+        <div class="card">Your smile</div>
+        <div class="card">Your spirit</div>
+        <div class="card">Your heart</div>
+    </div>
+</section>
+
+<!-- ✅ VIDEO WITH AUTOPLAY -->
+<section>
+    <h2>For You</h2>
+    <div class="video-container">
+        <video controls autoplay muted loop playsinline>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+<section>
+    <h2>A Letter For You</h2>
+    <p>
+        My Dearest Roseline,<br><br>
+
+        Today is not merely another day on the calendar. It is the day the universe paused, took a breath, and gifted me the most beautiful soul it had ever crafted: you. As I sit here searching for the right words, my heart is so full it barely knows how to contain it all. Somewhere between the laughter and the quiet moments, I came to realize just how profoundly fortunate I am to call you mine.<br><br>
+
+        On your birthday, I want to pause the world and remind you of what you already are—and what you will always be to me. You are not simply my partner. You are my closest confidant, my sanctuary, my peace, and yes—my favorite step mom. You are the light that finds me even when I am lost in the darkness.<br><br>
+
+        The way you laugh—like sunlight breaking through the clouds. The way you smile—soft and warm, like the first morning of spring. The way your eyes hold both kindness and fire—everything about you is pure, unscripted grace.<br><br>
+
+        I thank God every single day for the beautiful accident that brought you into my life. Your kindness is a shelter. Your strength is a quiet storm. Your beauty—inside and out—leaves me breathless every time. You have this rare, almost sacred ability to make everything better, to lift me when I am low, and to transform ordinary moments into treasures I will carry forever.<br><br>
+
+        Loving you feels like breathing—effortless, natural, destined. It is in the way you look at me when silence speaks volumes. It is in the way your hand finds mine as if it was always meant to be there. And it is in those quiet, stolen hours when the world fades away… and it is just you, just me, just us.<br><br>
+
+        As you celebrate another journey around the sun, I want you to know how deeply proud I am of the woman you have become. Your resilience is a flame that never dims. Your passion is a river that never stops flowing. Your grace is the kind of poetry that leaves the world in awe. You inspire me—not merely in what you do, but in who you are. I see your dreams, and I promise you this: I will walk beside you, hold your hand, and chase every single one with you. Together, we will take on the world—because with you, there is nothing we cannot face.<br><br>
+
+        On this special day, I wish you oceans of happiness, skies full of love, and mountains of success—all that your beautiful heart can hold. You deserve the very best of everything, and I will spend every sunrise trying to give you just that. Thank you for being my greatest blessing—the love of my life, the keeper of my heart, and the woman I cherish with every fiber of my being.<br><br>
+
+        May this new year of your life bring you as much joy and love as you have poured into mine. I cannot wait to write more chapters with you, to laugh until our souls ache, to grow beside you like two trees rooted in the same soil, and to love you deeper than I ever thought possible.<br><br>
+
+        With all my love,<br>
+        <strong>Happy Birthday, Roseline Katherine Fofanah</strong>
+    </p>
+</section>
+
+<section>
+    <h2>A Surprise For You</h2>
+    <button class="btn" onclick="showSurprise()">Reveal</button>
+    <p id="surpriseText" class="hidden">
+        You mean everything to me.
+    </p>
+</section>
+
+<script>
+const text = "Happy Birthday, My Love";
+let index = 0;
+
+function typeEffect() {
+    if (index < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 80);
+    }
+}
+typeEffect();
+
+function scrollToSection() {
+    document.getElementById("story").scrollIntoView({ behavior: 'smooth' });
+}
+
+function showSurprise() {
+    document.getElementById("surpriseText").style.display = "block";
+}
+</script>
+
+</body>
+</html>
